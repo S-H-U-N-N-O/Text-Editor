@@ -338,7 +338,7 @@ editmenu.add_command(label='Cut', accelerator='Ctrl+X', image=cutImage, compound
 editmenu.add_command(label='Copy', accelerator='Ctrl+C', image=copyImage, compound=LEFT, command=lambda : textarea.event_generate('<Control c>'))
 editmenu.add_command(label='Paste', accelerator='Ctrl+V', image=pasteImage, compound=LEFT, command=lambda : textarea.event_generate('<Control v>'))
 editmenu.add_command(label='Select All', accelerator='Ctrl+A', image=selectImage, compound=LEFT, command=lambda : textarea.event_generate('<Control a>'))
-editmenu.add_command(label='Clear', accelerator='Ctrl+Alt+X', image=clearImage, compound=LEFT, command=clear_all)
+editmenu.add_command(label='Clear', image=clearImage, compound=LEFT, command=clear_all)
 editmenu.add_command(label='Find', accelerator='Ctrl+F', image=findImage, compound=LEFT, command=Find)
 menubar.add_cascade(label='Edit', menu=editmenu)
 
